@@ -8,8 +8,15 @@
 </head>
 <body>
   <div id="app">
-    {{ message }}
-    <el-button @click="visible = true">Button</el-button>
+    <div class="block">
+      <span class="demonstration">Default value</span>
+      <el-slider 
+      :min = "2000" 
+      :max = "1000000" 
+      :step = "1000"
+      v-model="message"></el-slider>
+    </div>
+    {{message}}
   </div>
 
   <script src="app.js"></script>
